@@ -1,0 +1,30 @@
+.container {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column; /* Untereinander anordnen in kleineren Ansichten */
+    gap: 20px; /* Abstand zwischen den Inhaltsbereichen */
+  }
+  
+  /* Für breitere Bildschirme (Desktop) nebeneinander anordnen */
+  @media (min-width: 768px) {
+    .content {
+      flex-direction: row; /* Nebeneinander anordnen */
+    }
+  
+    app-budget-input,
+    app-expense-input {
+      flex: 1; /* Gleichmäßiges Verteilen des verfügbaren Platzes */
+    }
+  
+    app-budget-overview {
+      flex: 1.5; /* Budgetübersicht etwas breiter gestalten */
+    }
+  }

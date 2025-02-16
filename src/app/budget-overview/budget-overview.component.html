@@ -1,0 +1,21 @@
+<div class="budget-overview">
+    <h2>Budgetübersicht</h2>
+  
+    <h3>Budgetposten</h3>
+    <ul>
+      <li *ngFor="let item of budgetItems">
+        {{ item.category }}: {{ item.amount | currency:'EUR' }}
+      </li>
+    </ul>
+  
+    <h3>Ausgaben</h3>
+    <ul>
+      <li *ngFor="let item of expenseItems">
+        {{ item.description }} ({{ item.category }}): {{ item.amount | currency:'EUR' }}
+      </li>
+    </ul>
+  
+    <h3>Gesamtbudget: {{ getTotalBudget() | currency:'EUR' }}</h3>
+    <h3>Gesamtausgaben: {{ getTotalExpenses() | currency:'EUR' }}</h3>
+    <h3>Verbleibendes Budget: {{ getRemainingBudget() | currency:'EUR' }}</h3>
+  </div>

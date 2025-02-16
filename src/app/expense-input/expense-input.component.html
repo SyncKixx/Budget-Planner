@@ -1,0 +1,16 @@
+<div class="expense-input">
+    <h2>Ausgabe hinzufügen</h2>
+    <div>
+      <label for="description">Beschreibung:</label>
+      <input type="text" id="description" [(ngModel)]="description" placeholder="z.B. Mittagessen, Kinobesuch">
+    </div>
+    <div>
+      <label for="category">Kategorie:</label>
+      <input type="text" id="category" [(ngModel)]="category" placeholder="z.B. Essen, Freizeit">
+    </div>
+    <div>
+      <label for="amount">Betrag:</label>
+      <input type="number" id="amount" [(ngModel)]="amount" placeholder="Betrag in €">
+    </div>
+    <button (click)="addExpenseItem()">Ausgabe hinzufügen</button>
+  </div>
