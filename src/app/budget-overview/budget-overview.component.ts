@@ -9,7 +9,7 @@ import { FormsModule } from '@angular/forms';
   selector: 'app-budget-overview',
   imports: [CommonModule,FormsModule],
   templateUrl: './budget-overview.component.html',
-  styleUrls: ['./budget-overview.component.css']
+  styleUrls: ['./budget-overview.component.scss']
 })
 export class BudgetOverviewComponent implements OnInit {
   budgetItems: BudgetItem[] = [];

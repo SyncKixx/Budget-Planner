@@ -7,7 +7,7 @@ import { FormsModule } from '@angular/forms';
   selector: 'app-budget-input',
   imports: [FormsModule],
   templateUrl: './budget-input.component.html',
-  styleUrls: ['./budget-input.component.css']
+  styleUrls: ['./budget-input.component.scss']
 })
 export class BudgetInputComponent {
   category: string = '';

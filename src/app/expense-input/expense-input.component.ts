@@ -7,7 +7,7 @@ import { FormsModule } from '@angular/forms';
   selector: 'app-expense-input',
   imports : [FormsModule],
   templateUrl: './expense-input.component.html',
-  styleUrls: ['./expense-input.component.css']
+  styleUrls: ['./expense-input.component.scss']
 })
 export class ExpenseInputComponent {
   description: string = '';
